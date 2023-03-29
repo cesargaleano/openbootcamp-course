@@ -5,6 +5,11 @@ import './App.css'
 import { Greeting } from './components/pure/Greeting'
 import { TaskList } from './components/container/TaskList'
 import { ContactChange } from './components/container/ContactChange'
+import { Ejemplo2 } from './hooks/Ejemplo2'
+import { Ejemplo3 } from './hooks/Ejemplo3'
+import { Ejemplo4 } from './hooks/Ejemplo4'
+import Clock from './components/pure/ClockWithClass'
+import { ClockWithFunction } from './components/pure/ClockWithFunction'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +17,11 @@ function App() {
   return (
     <div className="App">
       <ContactChange/>
+      <Ejemplo3 />
+      <Ejemplo4>
+        <h2>Hola Mundo</h2>
+      </Ejemplo4>
+      <ClockWithFunction />
     </div>
   )
 }
